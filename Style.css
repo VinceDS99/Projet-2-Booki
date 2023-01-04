@@ -14,6 +14,13 @@ body
     color: #0065FC;
 }
 
+/* Couleur des icônes mis en bleu */
+#bleug
+{
+    color: #0065FC;
+    margin-top:8%;
+}
+
 #bleui
 {
     color: #0065FC;
@@ -35,6 +42,8 @@ a
     line-height: 19px;
     color:#000;
     margin-bottom: 10%;
+    height:100%;
+    width:100%;
 }
 
 /* Retire les points des listes à puces */
@@ -43,6 +52,11 @@ ul
     list-style-type: none;
 }
 
+li
+{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
 /* Au passage de la souris une bordure bleu apparait en haut */
 #nav:hover
@@ -137,8 +151,8 @@ ul
     display: flex;
     flex-direction: row;
     gap: 31px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Alignement des éléments */
@@ -150,21 +164,14 @@ ul
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 5%;
 }
 
 /* Marge autour du titre "Hébergements à Marseille" */
 #hebergements
 {
-    margin-left: 40px;
-    margin-top: 42px;
-}
-
-/* Marge autour du titre "Afficher plus" */
-h3
-{
-    margin-left: 44px;
-    margin-bottom: 46px;
+    margin-left: 3%;
+    margin-top: 3%;
 }
 
 /* Fond gris et bordure pour la section */
@@ -172,46 +179,68 @@ h3
 {
     background: #F2F2F2;
     border-radius: 20px;
-    height: 626px;
-    width: 880px;
+    width: 67%;
 }
+
 
 /* Fond et bordure des annonces */
 .annonce
 {
     background: #FFFFFF;
     border-radius: 20px;
-    width: 246px;
+    width: 33%;
+    height: 100%;
 }
 
 /* Fond et bordure des annonces populaires */
 .annonce2
 {
+    display:flex;
+    flex-direction: row;
     background: #FFFFFF;
     border-radius: 20px;
-    height:153px;
-    width: 343px;
+    height:25%;
+    width: 80%;
     margin-left: 37px;
     margin-right:40px;
     margin-bottom: 33px;
 }
 
+.affi
+{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 3%;
+}
+
 /* Bordure et dimension des photos des annonces */
 .photoannonce
 {
-    Width:235px;
-    Height:124px;
+    width:95%;
+    text-align: center;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
+    height: 100px;
+    object-fit: cover;
 }
 
 /* Bordure et dimension des photos des annonces populaires*/
 .photoannonce2
 {
-    Width:137px;
-    Height:144px;
+    width:40%;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.titre
+{
+    font-weight: bold;
+    margin-bottom:10px;
 }
 
 /* Marge et taille des caractères des titres principaux */
@@ -220,7 +249,7 @@ h1
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    margin-top:41px;
+    margin-top:3%;
 }
 
 /* Taille des caractères des titres des annonces + marge */
@@ -260,7 +289,17 @@ p.pannonce
 {
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
+    margin-right: 15%;
+}
+
+/* Titre et sous-titre des annonces populaires à la droite des images */
+.ligne2
+{
+    display: flex;
+    flex-direction: column;
     justify-content:flex-end;
+    padding-bottom: 7%;
 }
 
 /* Couleur des étoiles et marge */
@@ -277,9 +316,8 @@ aside
     background: #F2F2F2;
     border-radius: 20px;
     flex-direction:column;
-    height: 625px;
-    width: 420px;
-    margin-right: 60px;
+    height: 100%;
+    width: 33%;
 }
 
 /* Création de deux blocs d'annonces */
@@ -287,8 +325,7 @@ aside
 {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    height: 626px;
+    gap: 3%;
 }
 
 /* Marge du titre "Trouvez votre hébergement pour des vacances de rêve" */
@@ -303,17 +340,17 @@ body
     margin-top: 44px;
     margin-left: 55px;
     margin-right: 177px;
-    width:1440px;
-    height: 1898px;
+    max-width:1440px;
 }
 
 /* Bordure et dimension des photos des activités */
 .photoactivites
 {
-    Width:302px;
-    Height:444.51px;
-    border: 5px solid #FFFFFF;
+    Width:100%;
+    Height:80%;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    padding: 1px;
 }
 
 /* Création du bloc activités */
@@ -323,30 +360,31 @@ body
     flex-direction: row;
     justify-content: left;
     background: #FFFFFF;
-    gap: 43px;
+    gap: 3%;
 }
 
 /* Marge du titre "Activités à Marseille" */
 #activites
 {
-    margin-top: 60px;
+    height:100%;
 }
 
 /* Marge du titre "Les plus populaires" */
 .pop
 {
-    margin-left: 42px;
-    margin-top: 41px;
-    margin-right: 178px;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 /* Dimension et fond des annonces populaires */
 .activites1
 {
     background: #FFFFFF;
-    border-radius: 0px 0px 20px 20px;
-    height:445px;
-    width: 302px;
+    border-radius: 20px 20px 20px 20px;
+    width: 25%;
+    box-shadow: 3px 3px 5px #F2F2F2;
+    height: 400px;
+
 }
 
 /* Dimension et fond du bloc footer */
@@ -356,8 +394,34 @@ body
     flex-direction: row;
     justify-content: space-around;
     background: #F2F2F2;
-    gap: 248px;
-    margin-top: 61px;
-    height: 225px;
-    width:1339px;
+    gap: 3%;
+    margin-top: 2%;
+    height: 100%;
+    width: 100%;
 }
+
+.Toutesactivites
+{
+    height:100%;
+    width:100%
+}
+
+
+/* ////////////////// MEDIA QUERIES////////////////// */
+
+@media screen and (max-width: 768px)
+{
+body
+{
+    background-color:red;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:992px)
+{
+    body
+    {
+        background-color:yellow;
+    }
+}
+
