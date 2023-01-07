@@ -9,9 +9,14 @@ body
 }
 
 /* Couleur des icônes mis en bleu */
-#bleu
+.fa-star,.fa-person,.fa-money-bill-wave,.fa-heart,.fa-dog
 {
-    color: #0065FC;
+    color:#0065FC;
+
+}
+.fa-star
+{
+    margin-bottom: 11px;
 }
 
 /* Couleur des icônes mis en bleu */
@@ -59,7 +64,7 @@ li
 }
 
 /* Au passage de la souris une bordure bleu apparait en haut */
-#nav:hover
+.nav:hover
 {
     border-top : solid;
     border-color: #0065FC;
@@ -68,7 +73,7 @@ li
 }
 
 /* Couleur des liens de navigation en bleu */
-#nav
+.nav
 {
     padding-right: 77px;
     padding-left:67px;
@@ -192,6 +197,11 @@ li
     height: 100%;
 }
 
+#et1,#et2,#et3,#et4,#et5,#et6,#et7,#et8,#et9
+{
+    padding-left: 7%;
+}
+
 /* Fond et bordure des annonces populaires */
 .annonce2
 {
@@ -302,13 +312,6 @@ p.pannonce
     padding-bottom: 7%;
 }
 
-/* Couleur des étoiles et marge */
-#bleuetoile
-{
-    color: #0065FC;
-    margin-left: 16px;
-    margin-bottom: 11px;
-}
 
 /* Mise en colonne avec fond gris des annonces populaires */
 aside
@@ -337,9 +340,7 @@ aside
 /* Dimensions de la page */
 body
 {
-    margin-top: 44px;
-    margin-left: 55px;
-    margin-right: 177px;
+    margin-top: 5%;
     max-width:1440px;
 }
 
@@ -411,17 +412,181 @@ body
 
 @media screen and (max-width: 768px)
 {
-body
-{
-    background-color:red;
+
+    .Rechercher
+    {
+        display:none;
+    }
+
+    *
+    {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    body
+    {
+        width: 100%;
+    }
+
+    .vac
+    {
+        color: crimson;
+        width: 90%;;
+    }
+
+    .logo
+    {
+        height: 33px;
+        margin-right: 33%;
+        margin-left: 33%;
+    }
+
+    .header
+    {
+        flex-wrap: wrap;
+    }
+
+    .navbar
+    {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .nav
+    {
+        padding-right: 3%;
+        padding-left:3%;
+        padding-top: 3%;
+        text-align: center;
+    }
+
+    #nav1, #nav2
+    {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .Filtres
+    {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Filtre
+    {
+        width: 30%;
+    }
+
+    .fil
+    {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .fil1
+    {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fil2
+    {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tout
+    {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;   
+    }
+
+    aside
+    {
+        width:100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .section1
+    {
+        width:100%;
+        background-color: white;
+        margin-top: 3%;
+    }
+
+    .annonce
+    {
+        width:80%;
+    }
+
+    .hebergements1,.hebergements2
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .affi
+    {
+        display: none;
+    }
+
+    .activites
+    {  
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .activites1
+    {
+        width: 80%;
+        padding: 3%;
+        margin-bottom: 3%;
+    }
+
+    .footer
+    {
+        flex-direction: column;
+
+    }
 }
-}
+
+
+
+
+
+
 
 @media screen and (min-width:769px) and (max-width:992px)
 {
     body
     {
         background-color:yellow;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:993px)
+{
+    .fa-magnifying-glass
+    {
+        display: none;
+        color:#0065FC;
     }
 }
 
