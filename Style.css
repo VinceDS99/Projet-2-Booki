@@ -6,6 +6,8 @@ body
     font-family: 'Raleway';
     font-style: normal;
     color:black;
+    width: 100%;
+    max-width: 1400px;
 }
 
 /* Couleur des icônes mis en bleu */
@@ -46,7 +48,7 @@ a
     font-size: 16px;
     line-height: 19px;
     color:#000;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     height:100%;
     width:100%;
 }
@@ -68,7 +70,7 @@ li
 {
     border-top : solid;
     border-color: #0065FC;
-    padding-top:41px;
+    padding-top:55px;
     color:#0065FC;
 }
 
@@ -96,6 +98,12 @@ li
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 15px 15px 15px;
+    width: 20%;
+}
+
+.section1
+{
+    width: 100%;
 }
 
 /* Bordure des filtres et taille du texte*/
@@ -135,12 +143,13 @@ li
     color: white;
     padding: 5px;
     font-weight:bold ;
+    width:50%;
 }
 
 /* Espacement icone localisation */
 #icon-i
 {
-    padding: 10px;
+    padding: 20px;
 }
 
 /* Nom emplacement en gras */
@@ -195,6 +204,10 @@ li
     border-radius: 20px;
     width: 33%;
     height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    box-shadow: 3px 3px 5px #F2F2F2;
+    margin-top: 5%;
 }
 
 #et1,#et2,#et3,#et4,#et5,#et6,#et7,#et8,#et9
@@ -301,6 +314,7 @@ p.pannonce
     flex-direction: row;
     justify-content:space-between;
     margin-right: 15%;
+    width: 80%;
 }
 
 /* Titre et sous-titre des annonces populaires à la droite des images */
@@ -321,6 +335,7 @@ aside
     flex-direction:column;
     height: 100%;
     width: 33%;
+    margin-right: 0;
 }
 
 /* Création de deux blocs d'annonces */
@@ -329,6 +344,7 @@ aside
     display: flex;
     flex-direction: row;
     gap: 3%;
+    width: 100%;
 }
 
 /* Marge du titre "Trouvez votre hébergement pour des vacances de rêve" */
@@ -385,7 +401,6 @@ body
     width: 25%;
     box-shadow: 3px 3px 5px #F2F2F2;
     height: 400px;
-
 }
 
 /* Dimension et fond du bloc footer */
@@ -410,29 +425,34 @@ body
 
 /* ////////////////// MEDIA QUERIES////////////////// */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 
-    .Rechercher
-    {
-        display:none;
-    }
+
 
     *
     {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin:0;
     }
 
     body
     {
         width: 100%;
+        margin: 0;
     }
 
     .vac
     {
         color: crimson;
-        width: 90%;;
+        width: 90%;
+        margin-left: 5%;
+        margin-top:5%
+    }
+
+    p.ouen
+    {
+        margin-left: 5%;
+        margin-top: 2%;
     }
 
     .logo
@@ -440,18 +460,34 @@ body
         height: 33px;
         margin-right: 33%;
         margin-left: 33%;
+        margin-bottom: 5%;
     }
+
 
     .header
     {
         flex-wrap: wrap;
+        margin-top: 3%;
     }
 
     .navbar
     {
         display: flex;
         flex-direction: row;
-        width: 50%;
+        width: 100%;
+        border-bottom : solid;
+        border-color: #F2F2F2;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .nav:hover
+    {
+        border-top: #FFFFFF;
+        border-bottom : solid;
+        border-color: #0065FC;
+        color:#0065FC;
+        padding-top: 0%;
     }
 
     .nav
@@ -474,11 +510,16 @@ body
         flex-wrap: wrap;
         display: flex;
         flex-direction: row;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        width: 95%;
+        gap: 1%;
     }
 
     .Filtre
     {
-        width: 30%;
+        width: 40%;
+        margin: 0;
     }
 
     .fil
@@ -514,6 +555,9 @@ body
         margin-right: 0%;
         padding-left: 0%;
         padding-right: 0%;
+        margin-top: 5%;
+        gap:0%;
+        padding-bottom: 5%;
     }
 
     .section1
@@ -525,13 +569,24 @@ body
 
     .annonce
     {
-        width:80%;
+        width:95%;
+        margin-left: 3%;
+    }
+
+    .annonce2
+    {
+        width: 95%;
+        justify-content: center;
+        margin-right:0;
+        margin-left: 2%;
+        margin-bottom: 3%;
     }
 
     .hebergements1,.hebergements2
     {
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
 
     .affi
@@ -543,20 +598,77 @@ body
     {  
         flex-direction: column;
         flex-wrap: wrap;
+        width:95%;
     }
 
     .activites1
     {
-        width: 80%;
+        width: 100%;
         padding: 3%;
         margin-bottom: 3%;
+        height: 200px;
     }
 
     .footer
     {
         flex-direction: column;
-
     }
+
+    .border
+    {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #Filtrestitre
+    {
+        width: 100%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+
+    .rechercher
+    {
+        display: none;
+    }
+
+    #et1,#et2,#et3,#et4,#et5,#et6,#et7,#et8,#et9
+    {
+        padding-left: 0;
+        margin-left: 15px;
+        margin-right:0;
+    }
+
+    li
+    {
+        padding-bottom: 0;
+    }
+
+    .pop
+    {
+        margin-bottom: 5%;
+    }
+
+    .photoannonce2
+    {
+        width: 50%;
+    }
+
+    .photoannonce
+    {
+        width: 98%;
+    }
+
+    #activites
+    {
+    margin-left: 3%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    }
+
+
+
 }
 
 
@@ -565,11 +677,61 @@ body
 
 
 
-@media screen and (min-width:769px) and (max-width:992px)
+@media screen and (min-width:768px) and (max-width:991px)
 {
+    .vac
+    {
+        color:rgb(2, 141, 14);
+    }
+
     body
     {
-        background-color:yellow;
+        height: 100%;
+        margin-left: 2%;
+        margin-right:2%;
+    }
+
+    .tout
+    {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .section1
+    {
+        width: 95%;
+        height: 100%;
+    }
+
+    .annonce
+    {
+        width: 33%;
+        height: 30%;
+    }
+
+    aside
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:95%;
+        gap: 2%;
+        margin-top: 5%;
+        height: 100%;
+    }
+
+    .annonce2
+    {
+        width: 27%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .Toutesactivites
+    {
+        margin-left:2%;
+        margin-right:2%;
+
     }
 }
 
@@ -585,8 +747,10 @@ body
 {
     .fa-magnifying-glass
     {
-        display: none;
-        color:#0065FC;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    left: -999em;
     }
 }
 
