@@ -91,8 +91,8 @@ li
     justify-content:space-between;
 }
 
-/* Bordure de la barre de recherche et alignement à gauche */
-.border
+/* Bordure de la barre de recherche et création du bloc*/
+.barreRecherche
 {
     display: inline-flex;
     background: #F2F2F2;
@@ -143,7 +143,7 @@ li
     color: white;
     padding: 5px;
     font-weight:bold ;
-    width:50%;
+    width:80%;
 }
 
 /* Espacement icone localisation */
@@ -256,7 +256,6 @@ li
     width:40%;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
-    height: 150px;
     object-fit: cover;
 }
 
@@ -333,12 +332,11 @@ aside
     background: #F2F2F2;
     border-radius: 20px;
     flex-direction:column;
-    height: 100%;
     width: 33%;
     margin-right: 0;
 }
 
-/* Création de deux blocs d'annonces */
+/* Création du bloc contenant deux blocs d'annonces */
 .tout
 {
     display: flex;
@@ -375,9 +373,9 @@ body
 {
     display: flex;
     flex-direction: row;
-    justify-content: left;
     background: #FFFFFF;
     gap: 3%;
+    width: 100%;
 }
 
 /* Marge du titre "Activités à Marseille" */
@@ -419,7 +417,7 @@ body
 .Toutesactivites
 {
     height:100%;
-    width:100%
+    width:95%
 }
 
 
@@ -427,8 +425,6 @@ body
 
 @media screen and (max-width: 767px)
 {
-
-
 
     *
     {
@@ -500,9 +496,8 @@ body
 
     #nav1, #nav2
     {
-        display: flex;
-        flex-direction: row;
         width: 50%;
+        text-align: center;
     }
 
     .Filtres
@@ -519,7 +514,7 @@ body
     .Filtre
     {
         width: 40%;
-        margin: 0;
+        margin: 10px 0 0 0;
     }
 
     .fil
@@ -589,6 +584,8 @@ body
         margin: 0;
     }
 
+
+
     .affi
     {
         display: none;
@@ -614,7 +611,7 @@ body
         flex-direction: column;
     }
 
-    .border
+    .barreRecherche
     {
         margin-left: 5%;
         margin-top: 5%;
@@ -653,6 +650,7 @@ body
     .photoannonce2
     {
         width: 50%;
+        height: 150px;
     }
 
     .photoannonce
@@ -667,7 +665,26 @@ body
     margin-bottom: 5%;
     }
 
+    .barreRecherche
+    {
+        width:90%;
+        display: flex;
+    }
 
+    #icon-i
+    {
+        width:5%
+    }
+
+    .Ville
+    {
+        width:80%;
+    }
+
+    .btn
+    {
+        width: 15%;
+    }
 
 }
 
@@ -725,6 +742,7 @@ body
         width: 27%;
         margin-left: 2%;
         margin-right: 2%;
+        height: auto;
     }
 
     .Toutesactivites
@@ -732,6 +750,19 @@ body
         margin-left:2%;
         margin-right:2%;
 
+    }
+
+    a
+    {
+        height:200px;
+    }
+
+    .fa-magnifying-glass
+    {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    left: -999em;
     }
 }
 
